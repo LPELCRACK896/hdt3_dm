@@ -69,7 +69,7 @@ def svm():
     y_pred = clasificador.predict(X_prueba)
 
     mat_conf = confusion_matrix(y_prueba, y_pred)
-    print("###MATRIZ DE CONFIANZA###")
+    print("###MATRIZ DE CONFUSION###")
     print(mat_conf)
     score = accuracy_score(y_prueba, y_pred)
     print("###Accuracy score###")
